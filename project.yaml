@@ -1,16 +1,23 @@
-specVersion: 0.2.0
-name: account-transfer
-version: 0.0.4
+specVersion: 1.0.0
+name: account-transfers
+version: 1.0.0
+runner:
+  node:
+    name: '@subql/node'
+    version: '>=1.0.0'
+  query:
+    name: '@subql/query'
+    version: '*'
 description: >-
-  This project can be use as a starting point for developing your SubQuery
+  This project can be used as a starting point for developing your SubQuery
   project
 repository: 'https://github.com/subquery/subql-starter'
 schema:
   file: ./schema.graphql
 network:
-  endpoint: https://polkadot.api.onfinality.io/public
-  genesisHash: 0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3
-  dictionary: https://api.subquery.network/sq/subquery/polkadot-dictionary
+  chainId: '0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3'
+  endpoint: 'wss://polkadot.api.onfinality.io/public-ws'
+  dictionary: 'https://api.subquery.network/sq/subquery/polkadot-dictionary'
 dataSources:
   - kind: substrate/Runtime
     startBlock: 1
