@@ -19,9 +19,6 @@ yarn codegen
 
 ## Build the project
 
-In order to deploy your SubQuery project to our hosted service, it is mandatory to pack your configuration before upload.
-Run pack command from root directory of your project will automatically generate a `your-project-name.tgz` file.
-
 ```
 yarn build
 ```
